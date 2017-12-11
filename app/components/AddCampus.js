@@ -34,12 +34,15 @@ export default class AddCampus extends Component {
       .then(res =>res.data)
       .then(newCampus => console.log(newCampus))
       .catch(err => console.log(err))
+      this.setState({name:""});
+      this.setState({url:""});
+      this.setState({desc:""});
             
     }
     
     
     render(){
-        console.log("bbbbbbbbbbbbbbbbbbbbb");
+  
         return(
 <div className="well">
   <form className="form-horizontal" onSubmit={this.handleSubmit}>

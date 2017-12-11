@@ -6,20 +6,20 @@ const Sidebar = function() {
         <sidebar>
          <section>
             <h4 className="menu-item-active">
-             <Link to="/campuses"> CAMPUSES</Link>
+             <Link to="/campuses" replace > CAMPUSES</Link>
             </h4>
             <hr />
          </section>  
          <section>
             <h4 className="menu-item-active">
-             <Link to="/students"> STUDENTS</Link>
+             <Link to="/students" replace> STUDENTS</Link>
             </h4>
             <hr />
          </section>  
         <section>
           <h4 className="text-muted"></h4>
           <h4>
-             <Link className="btn btn-primary btn-block" to="/addCampus">
+             <Link className="btn btn-primary btn-block" to="/addCampus" replace >
                <span className="glyphicon glyphicon-plus"></span> CAMPUS
              </Link>
           </h4>
@@ -27,7 +27,7 @@ const Sidebar = function() {
         <section>
           <h4 className="text-muted"></h4>
           <h4>
-             <Link className="btn btn-primary btn-block" to="/addStudent">
+             <Link className="btn btn-primary btn-block" to="/addStudent" replace >
                <span className="glyphicon glyphicon-plus"></span> STUDENT
              </Link>
           </h4>
